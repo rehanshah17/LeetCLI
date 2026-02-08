@@ -1,4 +1,9 @@
-# LeetCLI
+#    __              __  ________    __
+#   / /   ___  ___  / /_/ ____/ /   / /
+#  / /   / _ \/ _ \/ __/ /   / /   / /
+# / /___/  __/  __/ /_/ /___/ /___/ /
+#/_____/\___/\___/\__/\____/_____/_/
+#terminal-first leetcode practice
 
 Terminal-first LeetCode workflow focused on local productivity.
 
