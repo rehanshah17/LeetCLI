@@ -178,7 +178,7 @@ func (m browseModel) View() string {
 	b.WriteString(sub + "\n")
 	b.WriteString(legend + "\n\n")
 	if len(m.items) == 0 {
-		b.WriteString("No cached problems. Run `leetcli solve --random` first.\n")
+		b.WriteString("No cached problems. Run `leet solve --random` first.\n")
 	} else {
 		for i, it := range m.items {
 			cursor := " "

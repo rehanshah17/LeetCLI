@@ -137,7 +137,7 @@ var solveCmd = &cobra.Command{
 
 		current, _ := a.store.CurrentProblem(ctx)
 		fmt.Printf("Prepared %d problem(s). Current: %s\n", prepared, current)
-		fmt.Printf("Open: leetcli open %s\n", current)
+		fmt.Printf("Open: leet open %s\n", current)
 		if !solveNoTimer {
 			fmt.Printf("Timer started: %d minutes\n", solveTimer)
 		}

@@ -1,14 +1,18 @@
-# leetcli
-`
+# LeetCLI
+
+```text
     __              __  ________    __
    / /   ___  ___  / /_/ ____/ /   / /
   / /   / _ \/ _ \/ __/ /   / /   / /
  / /___/  __/  __/ /_/ /___/ /___/ /
 /_____/\___/\___/\__/\____/_____/_/
-`
-#terminal-first leetcode practice
+```
 
 Terminal-first LeetCode workflow focused on local productivity.
+
+## Build
+
+- `make build` -> `bin/leet`
 
 ## v1 Features
 
@@ -29,20 +33,25 @@ Terminal-first LeetCode workflow focused on local productivity.
 
 ## Commands
 
-- `leetcli init [--project]`
-- `leetcli auth --session <...> --csrf <...> [--project]`
-- `leetcli solve [--slug two-sum | --random] [--difficulty Easy] [--topic Array] [--count 50] [--timer 30]`
-- `leetcli browse`
-- `leetcli open [slug] [--dir]`
-- `leetcli test [slug]`
-- `leetcli submit [slug]`
-- `leetcli note <slug> "text" [--tags edge-case,bug]`
-- `leetcli timer start|stop|extend [slug]`
-- `leetcli fetch` (neofetch-style dashboard)
-- `leetcli stats [--json]`
+- `leet init [--project]`
+- `leet auth --cookie "<COOKIE_HEADER>" [--project]`
+- `leet auth --session <LEETCODE_SESSION> --csrf <CSRFTOKEN> [--project]`
+- `leet auth guide`
+- `leet solve [--slug two-sum | --random] [--difficulty Easy] [--topic Array] [--count 50] [--timer 30] [--no-timer]`
+- `leet browse`
+- `leet open [slug] [--dir]`
+- `leet test [slug]`
+- `leet submit [slug]`
+- `leet note [slug] "<text>" [--tags edge-case,bug]`
+- `leet timer start [slug] [--minutes 30]`
+- `leet timer stop [slug]`
+- `leet timer extend [slug] [--minutes 10]`
+- `leet fetch` (neofetch-style dashboard)
+- `leet stats [--json]`
 
 ## Notes
 
 - Config default: XDG (`$XDG_CONFIG_HOME/leetcli/config.yaml` or `~/.config/leetcli/config.yaml`)
 - Project-local override: `.leetcli/config.yaml`
 - Env vars override config values.
+- `leet fetch` uses a blue/maize terminal theme.
